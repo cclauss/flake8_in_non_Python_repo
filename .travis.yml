@@ -15,7 +15,7 @@ script:
 matrix:
     include:
       - language: python
-        node_js:
+        # node_js:
         python: 2.7
           #- "3.6"
         #allow_failures:
