@@ -1,16 +1,20 @@
 language: node_js
 
+node_js:
+    - "8"
+
 script:
     - node -v
 
 matrix:
     include:
       - language: python
+        node_js:
         python:
           - "2.7"
           - "3.6"
-        allow_failures:
-          - python: "3.6"
+        #allow_failures:
+        #  - python: "3.6"
         install:
           #- pip install -r requirements.txt
           - pip install flake8  # pytest  # add another testing frameworks later
