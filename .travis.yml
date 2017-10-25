@@ -1,5 +1,8 @@
 language: node_js
 
+script:
+    - node -v
+
 matrix:
     include:
       - language: python
